@@ -13,11 +13,16 @@ public class ebebek_case {
 		e4.toString();
 	}}
 
+
+
 class Employee {
 	public String name;
 	public int salary;
 	public int workHours;
 	public int hireYear;
+	
+	
+	
 	public Employee (String _name, int _salary, int _workHours, int _hireYear) 
 	{
 		name=_name;
@@ -25,6 +30,9 @@ class Employee {
 		workHours = _workHours;
 		hireYear = _hireYear;
 	}
+	
+	
+	
 	public float tax() 
 
 	{
@@ -37,6 +45,10 @@ class Employee {
 		}
 		
 	}
+	
+	
+	
+	
 	public float bonus() 
 	{
 		if (workHours>40) {
@@ -46,6 +58,9 @@ class Employee {
 			return 0;
 		}
 	}
+	
+	
+	
 	public double raiseSalary() 
 	{ 	
 		int workYears = 2021 - hireYear;
@@ -62,19 +77,23 @@ class Employee {
 		else return 0;
 		
 	}
+	
+	
+	
+	
 	public String toString() {
 		
 		System.out.print
 		(
-				"name: " + name                                      +"\n" 
-				+"salary: " + salary                                          +"\n" 
-				+"workHours: " + workHours                                    +"\n"
-				+"hireYear: " + hireYear                                      +"\n" 
-				+"tax: " + tax()                                              +"\n" 
-				+"bonus: " + bonus()                                          +"\n"  
-				+"maaþ artýþý: " +  raiseSalary()                             +"\n"
-				+"vergi ve bonus: " + ( salary + bonus()-tax() )              +"\n"
-				+"toplam maaþ: " + ( salary+ raiseSalary() + bonus()-tax() )  +"\n"
+				 "name: "           + name                                       +"\n" 
+				+"salary: "         + salary                                     +"\n" 
+				+"workHours: "      + workHours                                  +"\n"
+				+"hireYear: "       + hireYear                                   +"\n" 
+				+"tax: "            + tax()                                      +"\n" 
+				+"bonus: "          + bonus()                                    +"\n"  
+				+"maaÃ¾ artÃ½Ã¾Ã½: "    + raiseSalary()                              +"\n"
+				+"vergi ve bonus: " + ( salary + bonus()-tax() )                 +"\n"
+				+"toplam maaÃ¾: "    + ( salary+ raiseSalary() + bonus()-tax() )  +"\n"
 				+"\n"+"\n"+"\n"
 						           
 				
